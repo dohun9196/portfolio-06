@@ -1,0 +1,78 @@
+input,
+button,
+textarea {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    color: #444;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn_o {
+    background: transparent;
+    border: none;
+    outline: none;
+    line-height: 1;
+}
+
+.bold {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex_inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex_inner>* {
+    flex: 1;
+}
+
+.mc {
+    color: #ff6347;
+}
+
+.mbg {
+    background: #f9f9f9;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.sec .tit {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec .tit h2 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    margin: 0 0 10px 0;
+}
+
+.sec .tit .tit_dec {
+    display: block;
+    font-size: 14px;
+    margin: 0 0 50px 0;
+    word-break: keep-all;
+    line-height: 24px;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #444;
+    padding: 7px 20px 7px 20px;
+}

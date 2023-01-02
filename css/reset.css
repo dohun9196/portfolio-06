@@ -1,0 +1,71 @@
+/* 웹 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+/* 아이콘 */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+.slick-track,
+.slick-list {
+    transition-delay: 0.03s;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+em,
+i,
+address {
+    font-style: normal;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+body {
+    line-height: 1;
+    letter-spacing: -0.025em;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #444;
+}
+
+p,
+a,
+span,
+strong,
+b,
+em,
+i,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.box {
+    transform: rotate(0.04deg);
+}
