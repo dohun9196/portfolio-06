@@ -1,0 +1,326 @@
+.h_bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 180px;
+
+    font-size: 0;
+    /* opacity: 0.7; */
+    z-index: 98;
+    background: url(/img/gnbBG.png);
+}
+
+.header .flex_inner {
+
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+
+}
+
+.header .flex_inner .header_logo {
+    position: relative;
+}
+
+.header_logo img {
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+}
+
+.header .flex_inner .gnb {
+    flex: 1 0 60%;
+}
+
+.flex_inner .gnb>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_inner .gnb>ul>li {
+    position: relative;
+
+}
+
+.flex_inner .gnb>ul>li>a {
+    position: relative;
+    display: block;
+
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 100px;
+    color: #fff;
+    text-shadow: 0px 0px 1px #dcbe96;
+
+    transition: 0.3s;
+}
+
+.flex_inner .gnb>ul>li>a::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(25deg);
+    width: 1px;
+    height: 30px;
+    background: #dcbe96;
+    transition: 0.3s;
+}
+
+
+.flex_inner .gnb>ul>li>a:hover::before {
+    top: -10%;
+}
+
+.gnb>ul>li .dropdown {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 150px;
+    padding: 20px 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 20%);
+
+    white-space: nowrap;
+    background: rgba(40, 30, 25, 1);
+    text-align: left;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gnb>ul>li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+
+}
+
+.dropdown>li>a {
+    display: block;
+    margin: 0 0 10px 0;
+
+    font-size: 15px;
+    text-align: center;
+    color: #f9f9f9;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+
+.dropdown>li>a:last-child {
+    margin: 0;
+}
+
+.locationVisual {
+    position: relative;
+    background: url(/img/location/location_visual01.jpg) no-repeat center center/cover;
+    height: 55vh;
+}
+
+.locationVisual .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Cormorant Upright', serif;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 1px 1px 3px #333;
+}
+
+.locationVisual .inner h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.locationVisual .inner p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.locationMap .inner.top {
+    margin: 0 auto 50px auto;
+}
+
+* {
+    outline: 1px solid #21c407;
+}
+
+.locationMap .inner.top>ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.locationMap .inner.top a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.locationMap .inner.top li:first-child a {
+    background: #fff;
+    transition: 0.5s;
+}
+
+.locationMap .inner.top li:first-child a:hover {
+    background: #f1f1f1;
+}
+
+.locationMap .inner.top li:last-child a {
+    background: #281e19;
+    color: #fff;
+}
+
+.locationMap .inner.main {
+    position: relative;
+    text-align: center;
+}
+
+.locationMap .inner.main ::before {
+    content: "";
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: inline-block;
+
+    width: 350px;
+    height: 1px;
+    background: #dcbe96;
+}
+
+.locationMap .inner.main::after {
+    content: "";
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    background: #dcbe96;
+}
+
+.locationMap .inner.main span {
+    display: block;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0 0 10px 0;
+}
+
+.locationMap .inner.main h2 {
+    font-family: 'Cormorant Upright', serif;
+
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.locationMap .inner.main p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+
+.locationRoad {
+    padding: 0 0 100px 0;
+    height: 100vh;
+}
+
+
+
+
+
+.footer {
+    padding: 30px 0;
+    background: #f9f9f9;
+    border-top: 1px solid#ddd;
+}
+
+.footer .flex_inner {
+    padding: 20px 0 0 0;
+}
+
+.footer .flex_inner address {
+    display: flex;
+    gap: 0 30px;
+    flex-wrap: wrap;
+    height: 50px;
+    flex: 1 0 50%;
+
+}
+
+.footer .flex_inner address span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer .flex_inner address span~span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0%, -100%);
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #aaa;
+}
+
+.footer .flex_inner address span:nth-child(4)::before {
+    content: none;
+}
+
+.sns_link {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.sns_link a {
+    display: inline-block;
+}
+
+.sns_link a:first-child img {
+    background: #21c407;
+}
+
+.sns_link img {
+    border-radius: 50%;
+}
+
+.copy {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 0 0 210px;
+
+    font-size: 14px;
+    font-weight: 300;
+}

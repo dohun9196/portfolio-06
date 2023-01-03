@@ -63,10 +63,9 @@
     letter-spacing: 0.5px;
     line-height: 100px;
     color: #fff;
-    text-shadow: 0px 0px 3px #dcbe96;
+    text-shadow: 0px 0px 1px #dcbe96;
 
     transition: 0.3s;
-    opacity: 0.8;
 }
 
 .flex_inner .gnb>ul>li>a::before {
@@ -78,15 +77,10 @@
     transform: translate(-50%, 0) rotate(25deg);
     width: 1px;
     height: 30px;
-    background: #333;
+    background: #dcbe96;
     transition: 0.3s;
-
 }
 
-.flex_inner .gnb>ul>li>a:hover {
-    display: block;
-    opacity: 1;
-}
 
 .flex_inner .gnb>ul>li>a:hover::before {
     top: -10%;
@@ -587,8 +581,7 @@
 }
 
 .weddingArea .flex_inner .news {
-    flex: 1 0 10%;
-    margin: 0 30px 0 0;
+    flex: 0 0 30%;
 }
 
 .weddingArea .flex_inner .news,
