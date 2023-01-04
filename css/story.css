@@ -121,13 +121,13 @@
     margin: 0;
 }
 
-.locationVisual {
+.brandVisual {
     position: relative;
-    background: url(/img/location/location_visual01.jpg) no-repeat center center/cover;
+    background: url(/img/brand/brand_visual01.jpg) no-repeat center center/cover;
     height: 55vh;
 }
 
-.locationVisual .locationVisual_bg {
+.brandVisual .brandVisual_bg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -135,7 +135,7 @@
 
 }
 
-.locationVisual .inner {
+.brandVisual .inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,32 +148,26 @@
     text-shadow: 1px 1px 3px #333;
 }
 
-.locationVisual .inner h2 {
+.brandVisual .inner h2 {
     font-size: 50px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
-.locationVisual .inner p {
+.brandVisual .inner p {
     font-size: 30px;
     font-weight: 700;
 }
 
-.locationMap {
-    padding: 100px 0 50px 0;
-}
+.brandcontent {}
 
-.locationMap .inner.top {
-    margin: 0 auto 50px auto;
-}
-
-.locationMap .inner.top>ul {
+.brandcontent .inner.top>ul {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-.locationMap .inner.top a {
+.brandcontent .inner.top a {
     display: block;
     padding: 10px 20px;
     border-radius: 20px;
@@ -183,29 +177,30 @@
     font-weight: 100;
 }
 
-.locationMap .inner.top li:first-child a {
-    background: #fff;
+.brandcontent .inner.top li:first-child a {
+    background: #281e19;
+    color: #fff;
     transition: 0.5s;
 }
 
-.locationMap .inner.top li:first-child a:hover {
+.brandcontent .inner.top li:last-child a:hover {
     background: #f1f1f1;
 }
 
-.locationMap .inner.top li:last-child a {
-    background: #281e19;
-    color: #fff;
+.brandcontent .inner.top li:last-child a {
+    background: #fff;
 }
 
-.locationMap .inner.main {
+.brandcontent .inner.main {
     position: relative;
     text-align: center;
+    margin: 50px auto;
 }
 
-.locationMap .inner.main::before {
+.brandcontent .inner.main::before {
     content: "";
     position: absolute;
-    top: 70%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -214,10 +209,10 @@
     background: #dcbe96;
 }
 
-.locationMap .inner.main::after {
+.brandcontent .inner.main::after {
     content: "";
     position: absolute;
-    top: 70%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 
@@ -226,14 +221,14 @@
     background: #dcbe96;
 }
 
-.locationMap .inner.main span {
+.brandcontent .inner.main span {
     display: block;
     font-size: 20px;
     font-weight: 100;
     margin: 0 0 10px 0;
 }
 
-.locationMap .inner.main h2 {
+.brandcontent .inner.main h2 {
     font-family: 'Cormorant Upright', serif;
 
     font-style: italic;
@@ -242,173 +237,131 @@
     margin: 0 0 30px 0;
 }
 
-.locationMap .inner.main p {
+.brandcontent .inner.main p {
     font-size: 20px;
     font-weight: 300;
     margin: 0 0 30px 0;
+    line-height: 30px;
 }
 
-
-.locationRoad {
-    padding: 0 0 100px 0;
+.brandcontent .flex_inner.top .topB_text {
+    word-break: keep-all;
+    padding: 20px 0;
 
 }
 
-.locationRoad .flex_inner .loc_road {
-    border: 1px solid#f7f7f7;
-}
-
-.locationRoad .flex_inner h2 {
-    font-size: 30px;
+.brandcontent .flex_inner.top .topB_text .text_top {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
     font-weight: 700;
-
-    text-align: left;
-    letter-spacing: 3px;
-
-    padding: 20px 0 20px 30px;
-
+    line-height: 30px;
+    margin: 0 0 20px 0;
 }
 
-.locationRoad .flex_inner .con_box {
-    display: inline-flex;
-    gap: 20px;
-    padding: 10px 30px;
-    width: fit-content;
-    background: #f5f5f5;
-    border-radius: 2px;
-    margin: 0 0 10px 30px;
-}
-
-.locationRoad .flex_inner .con_box img {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-
-}
-
-.locationRoad .flex_inner .con_box h3 {
-
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
-
-
-}
-
-.road_list .list {
-    margin: 0 0 30px 0;
-}
-
-.road_list span {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0 0 10px 40px;
-
-}
-
-.road_list .list>ul {}
-
-.road_list .list>ul>li {
-    font-size: 15px;
-    /* line-height: 30px; */
-    margin: 0 0 10px 0;
-}
-
-.road_list .list .sub_list {
+.brandcontent .flex_inner.top .topB_text .text_mid {
+    font-size: 17px;
     font-weight: 300;
-    margin: 0 0 0 60px;
+    line-height: 25px;
+    margin: 0 0 20px 0;
 }
 
-.road_list .list .sub_list li {
-    margin: 0 0 10px 0;
+.brandcontent .flex_inner.top .topB_text .text_bot {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
 }
 
-.locationRoad .flex_inner .loc_map {
-    background: #f5f5f5;
+.mainContent_b {
+    padding: 0 0 50px 0;
 }
 
-.loc_map .roadImg {
-    padding: 0 30px;
-    margin: 0 0 30px 0;
-}
-
-.loc_map .map_event {
+.mainContent_b .inner {
+    position: relative;
+    font-family: 'Cormorant Upright', serif;
     text-align: center;
+    font-style: italic;
+    margin: 0 auto 50px auto;
+}
 
+.mainContent_b .inner h2 {
+    font-size: 50px;
+    font-weight: 700;
     margin: 0 0 30px 0;
 }
 
-.loc_map .map_event a {
-    display: inline-block;
+.mainContent_b .inner::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 100%;
+    height: 1px;
+    background: #dcbe96;
 }
 
-.loc_map .map_event span {
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 10px;
-    font-size: 18px;
-    background: #fff;
-    border: 1px solid#aaa;
-    transition: 0.3s;
+.mainContent_b .inner::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    width: 10px;
+    height: 10px;
+    background: #dcbe96;
 }
 
-.loc_map .map_event i {
-    margin: 0 0 0 15px;
-}
-
-.loc_map .map_event span:hover {
-    background: #281e19;
-    color: #fff;
-}
-
-.loc_map .address {
-    padding: 0 30px;
-}
-
-.loc_map .address p {
+.mainContent_b .inner p {
     font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-}
-
-.loc_map .address span {
-    display: block;
-    font-size: 16px;
     font-weight: 300;
     line-height: 30px;
-    margin: 0 0 20px 40px;
+    margin: 0 0 30px 0;
 }
 
-.loc_map .loc_num {
+.mainContent_b .flex_inner {
+    flex-direction: column;
+    word-break: keep-all;
+    text-align: center;
+    gap: 0px;
+}
+
+.mainContent_b .flex_inner.bottom .bot01_t,
+.mainContent_b .flex_inner.bottom .bot02_b {
     display: flex;
-    gap: 60px;
-    justify-content: flex-start;
+
+    justify-content: space-between;
+    background: #f5f5f5;
+}
+
+.mainContent_b .flex_inner.bottom .bot01_t>*,
+.mainContent_b .flex_inner.bottom .bot02_b>* {
+    flex: 1;
+}
+
+.flex_inner.bottom .bot01_t .botB_text01,
+.flex_inner.bottom .bot02_b .botB_text02 {
+    margin: auto;
+
+}
+
+.flex_inner.bottom .bot01_t .botB_text01 h3,
+.flex_inner.bottom .bot02_b .botB_text02 h3 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 0 30px 0;
     padding: 0 30px;
-    margin: 0 0 15px 0;
 }
 
-.loc_map .loc_num p {
+.flex_inner.bottom .bot01_t .botB_text01 p,
+.flex_inner.bottom .bot02_b .botB_text02 p {
     font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-}
-
-.loc_map .loc_num span {
-    display: inline-block;
-    font-size: 16px;
     font-weight: 300;
     line-height: 30px;
-    margin: 0 0 0 40px;
+    padding: 0 30px;
 }
-
-
-
-
-
-
-
-
 
 
 
