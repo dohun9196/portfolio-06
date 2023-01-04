@@ -7,7 +7,7 @@
     font-size: 0;
     /* opacity: 0.7; */
     z-index: 98;
-    background: url(/img/gnbBG.png);
+    background: url(../img/gnbBG.png);
 }
 
 .header .flex_inner {
@@ -123,7 +123,7 @@
 
 .brandVisual {
     position: relative;
-    background: url(/img/brand/brand_visual01.jpg) no-repeat center center/cover;
+    background: url(../img/brand/brand_visual01.jpg) no-repeat center center/cover;
     height: 55vh;
 }
 

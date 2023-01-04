@@ -16,6 +16,16 @@ $(function () {
         cssEase: 'linear',
     });
 
+    $('.hallContent .inner .hall_slide').slick({
+        dots: true,
+        arrows: true,
+        cssEase: 'linear',
+    });
+    $('.brideContent .inner .bride_slide').slick({
+        dots: true,
+        arrows: true,
+        cssEase: 'linear',
+    });
 
     $('.down_con a').click(function () {
         $('html, body').animate({

@@ -121,13 +121,13 @@
     margin: 0;
 }
 
-.locationVisual {
+.weddingVisual {
     position: relative;
-    background: url(../img/location/location_visual01.jpg) no-repeat center center/cover;
+    background: url(../img/wedding/bride_visual01.jpg) no-repeat center center/cover;
     height: 55vh;
 }
 
-.locationVisual .locationVisual_bg {
+.weddingVisual .weddingVisual_bg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -135,7 +135,7 @@
 
 }
 
-.locationVisual .inner {
+.weddingVisual .inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,32 +148,32 @@
     text-shadow: 1px 1px 3px #333;
 }
 
-.locationVisual .inner h2 {
+.weddingVisual .inner h2 {
     font-size: 50px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
-.locationVisual .inner p {
+.hallVisual .inner p {
     font-size: 30px;
     font-weight: 700;
 }
 
-.locationMap {
-    padding: 100px 0 50px 0;
+.wedding_nav {
+    background: #f5f5f5;
 }
 
-.locationMap .inner.top {
+.wedding_nav .inner {
     margin: 0 auto 50px auto;
 }
 
-.locationMap .inner.top>ul {
+.wedding_nav .inner>ul {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-.locationMap .inner.top a {
+.wedding_nav .inner a {
     display: block;
     padding: 10px 20px;
     border-radius: 20px;
@@ -183,42 +183,45 @@
     font-weight: 100;
 }
 
-.locationMap .inner.top li:first-child a {
-    background: #fff;
+* {
+    outline: 1px solid #21c407;
+}
+
+.wedding_nav .inner li:nth-child(2) a {
+    background: #281e19;
+    color: #fff;
     transition: 0.5s;
 }
 
-.locationMap .inner.top li:first-child a:hover {
+.wedding_nav .inner li:nth-child(n+3) a:hover,
+.wedding_nav .inner li:nth-child(1) a:hover {
     background: #f1f1f1;
 }
 
-.locationMap .inner.top li:last-child a {
-    background: #281e19;
-    color: #fff;
+.wedding_nav .inner li:nth-child(n+3) a {
+    background: #fff;
 }
 
-.locationMap .inner.main {
+.wedding_nav .flex_inner {
     position: relative;
-    text-align: center;
 }
 
-.locationMap .inner.main::before {
+.wedding_nav .flex_inner::before {
     content: "";
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, 0);
-
-    width: 100%;
-    height: 1px;
+    top: 0%;
+    left: 370px;
+    transform: translate(0%, 0);
+    width: 1px;
+    height: 100%;
     background: #dcbe96;
 }
 
-.locationMap .inner.main::after {
+.wedding_nav .flex_inner::after {
     content: "";
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 50%;
+    left: 370px;
     transform: translate(-50%, -50%) rotate(-45deg);
 
     width: 10px;
@@ -226,192 +229,197 @@
     background: #dcbe96;
 }
 
-.locationMap .inner.main span {
-    display: block;
-    font-size: 20px;
-    font-weight: 100;
-    margin: 0 0 10px 0;
+.wedding_nav .flex_inner .wedding_left {
+    padding: 0 20px 0 0;
 }
 
-.locationMap .inner.main h2 {
-    font-family: 'Cormorant Upright', serif;
+.wedding_nav .flex_inner .wedding_left span {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
 
+    text-align: right;
+    margin: 0 0 20px 0;
+}
+
+.wedding_nav .flex_inner .wedding_right {
+    flex: 1 0 40%;
+    padding: 0 0 0 20px;
+}
+
+.wedding_nav .flex_inner .wedding_right h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.wedding_nav .flex_inner .wedding_right p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    word-break: keep-all;
+}
+
+.brideContent {}
+
+.brideContent h2 {
+    position: relative;
+
+    font-family: 'Cormorant Upright', serif;
+    text-align: center;
     font-style: italic;
     font-size: 50px;
     font-weight: 700;
-    margin: 0 0 30px 0;
-}
-
-.locationMap .inner.main p {
-    font-size: 20px;
-    font-weight: 300;
+    line-height: 1.5;
     margin: 0 0 30px 0;
 }
 
 
-.locationRoad {
-    padding: 0 0 100px 0;
-
-}
-
-.locationRoad .flex_inner .loc_road {
-    border: 1px solid#f7f7f7;
-}
-
-.locationRoad .flex_inner h2 {
-    font-size: 30px;
-    font-weight: 700;
-
-    text-align: left;
-    letter-spacing: 3px;
-
-    padding: 20px 0 20px 30px;
-
-}
-
-.locationRoad .flex_inner .con_box {
-    display: inline-flex;
-    gap: 20px;
-    padding: 10px 30px;
-    width: fit-content;
-    background: #f5f5f5;
-    border-radius: 2px;
-    margin: 0 0 10px 30px;
-}
-
-.locationRoad .flex_inner .con_box img {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-
-}
-
-.locationRoad .flex_inner .con_box h3 {
-
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
-
-
-}
-
-.road_list .list {
-    margin: 0 0 30px 0;
-}
-
-.road_list span {
+.brideContent h2::before {
+    content: "";
+    position: absolute;
     display: block;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0 0 10px 40px;
-
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 1px;
+    background: #dcbe96;
 }
 
-.road_list .list>ul {}
+.brideContent h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    display: block;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
 
-.road_list .list>ul>li {
-    font-size: 15px;
-    /* line-height: 30px; */
-    margin: 0 0 10px 0;
+    width: 10px;
+    height: 10px;
+    background: #dcbe96;
 }
 
-.road_list .list .sub_list {
-    font-weight: 300;
-    margin: 0 0 0 60px;
-}
-
-.road_list .list .sub_list li {
-    margin: 0 0 10px 0;
-}
-
-.locationRoad .flex_inner .loc_map {
-    background: #f5f5f5;
-}
-
-.loc_map .roadImg {
-    padding: 0 30px;
+.brideContent .inner .bride_slide {
+    position: relative;
+    width: 100%;
+    height: 650px;
     margin: 0 0 30px 0;
 }
 
-.loc_map .map_event {
-    text-align: center;
-
-    margin: 0 0 30px 0;
+.brideContent .inner .bride_slide figure {
+    font-size: 0;
 }
 
-.loc_map .map_event a {
-    display: inline-block;
+
+
+.brideContent .inner .bride_slide .slick-prev {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%)rotate(45deg);
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+
+    border: 2px solid #ddd;
+    border-top: none;
+    border-right: none;
+    background: none;
+
+    z-index: 99;
 }
 
-.loc_map .map_event span {
+.brideContent .inner .bride_slide .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%) rotate(45deg);
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+
+    border: 2px solid #bbb;
+    border-bottom: none;
+    border-left: none;
+    background: none;
+
+    z-index: 99;
+}
+
+.brideContent .inner .bride_slide .slick-dots {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.brideContent .inner .bride_slide .slick-dots li {
     display: inline-block;
-    padding: 10px 30px;
-    border-radius: 10px;
-    font-size: 18px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.brideContent .inner .bride_slide .slick-dots li:last-child {
+    margin: 0;
+}
+
+.brideContent .inner .bride_slide .slick-dots li button {
+    display: none;
+}
+
+.brideContent .inner .bride_slide .slick-dots li.slick-active {
     background: #fff;
-    border: 1px solid#aaa;
-    transition: 0.3s;
 }
 
-.loc_map .map_event i {
-    margin: 0 0 0 15px;
+.brideContent .inner .bride_slide figure {
+    height: 650px;
 }
 
-.loc_map .map_event span:hover {
-    background: #281e19;
-    color: #fff;
+.brideContent .inner .bride_slide .slide01 {
+    background: url(../img/wedding/bride_slide01.jpg) no-repeat center bottom/cover;
+
 }
 
-.loc_map .address {
-    padding: 0 30px;
+.brideContent .inner .bride_slide .slide02 {
+    background: url(../img/wedding/bride_slide02.jpg) no-repeat center bottom/cover;
 }
 
-.loc_map .address p {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
+.brideContent .inner .bride_slide .slide03 {
+    background: url(../img/wedding/bride_slide03.jpg) no-repeat center center/cover;
 }
 
-.loc_map .address span {
-    display: block;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 30px;
-    margin: 0 0 20px 40px;
+.brideContent .inner .bride_slide .slide04 {
+    background: url(../img/wedding/bride_slide04.jpg) no-repeat center center/cover;
 }
 
-.loc_map .loc_num {
-    display: flex;
-    gap: 60px;
-    justify-content: flex-start;
-    padding: 0 30px;
-    margin: 0 0 15px 0;
+
+.brideContent .inner .Wedding_Reservation {
+    text-align: center;
 }
 
-.loc_map .loc_num p {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-}
-
-.loc_map .loc_num span {
+.brideContent .inner .Wedding_Reservation a {
     display: inline-block;
+    padding: 20px 60px;
+
     font-size: 16px;
-    font-weight: 300;
-    line-height: 30px;
-    margin: 0 0 0 40px;
+    font-weight: 500;
+    color: #fff;
+    background: #281e19;
+
+    border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
     padding: 30px 0;
