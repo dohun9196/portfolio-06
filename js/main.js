@@ -51,6 +51,13 @@ $(function () {
 
     // 슬라이드 }
 
+    $('.wedding_nav .inner.content .gall_nav .gall_num').on('click', function () {
+        $('.wedding_nav .inner.content .gall_nav .gall_num').not($(this)).removeClass('on');
+        $(this).toggleClass('on')
+
+    });
+
+
 
     $('.down_con a').click(function () {
         $('html, body').animate({
@@ -156,10 +163,7 @@ $(function () {
     $("#top_btn").scrollTop(0);
 
 
-    $('.mbtn').on('click', function () {
-        $(this).toggleClass('on')
-        $('.gnb').toggleClass('on')
-    });
+
 
     $('.gnb>ul>li>a').on('click', function (e) {
         if ($(window).width() < 769) {

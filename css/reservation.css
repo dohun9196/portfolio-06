@@ -1,0 +1,490 @@
+.h_bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 180px;
+
+    font-size: 0;
+    /* opacity: 0.7; */
+    z-index: 98;
+    background: url(../img/gnbBG.png);
+}
+
+.header .flex_inner {
+
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+
+}
+
+.header .flex_inner .header_logo {
+    position: relative;
+}
+
+.header_logo img {
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+}
+
+.header .flex_inner .gnb {
+    flex: 1 0 60%;
+}
+
+.flex_inner .gnb>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_inner .gnb>ul>li {
+    position: relative;
+
+}
+
+.flex_inner .gnb>ul>li>a {
+    position: relative;
+    display: block;
+
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 100px;
+    color: #fff;
+    text-shadow: 0px 0px 1px #dcbe96;
+
+    transition: 0.3s;
+}
+
+.flex_inner .gnb>ul>li>a::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(25deg);
+    width: 1px;
+    height: 30px;
+    background: #dcbe96;
+    transition: 0.3s;
+}
+
+
+.flex_inner .gnb>ul>li>a:hover::before {
+    top: -10%;
+}
+
+.gnb>ul>li .dropdown {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 150px;
+    padding: 20px 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 20%);
+
+    white-space: nowrap;
+    background: rgba(40, 30, 25, 1);
+    text-align: left;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gnb>ul>li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+
+}
+
+.dropdown>li>a {
+    display: block;
+    margin: 0 0 10px 0;
+
+    font-size: 15px;
+    text-align: center;
+    color: #f9f9f9;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+
+.dropdown>li>a:last-child {
+    margin: 0;
+}
+
+.weddingVisual {
+    position: relative;
+    background: url(../img/wedding/weddingvisual01.jpg) no-repeat center center/cover;
+    height: 55vh;
+}
+
+.weddingVisual .weddingVisual_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+.weddingVisual .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Cormorant Upright', serif;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 1px 1px 3px #333;
+}
+
+.weddingVisual .inner h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.weddingVisual .inner p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.wedding_nav {
+    background: #f5f5f5;
+}
+
+.wedding_nav .inner {
+    margin: 0 auto 50px auto;
+}
+
+.wedding_nav .inner>ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.wedding_nav .inner a {
+    display: block;
+    width: 200px;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+    border: 1px solid #ddd;
+
+    background: #fff;
+    color: #333;
+
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.wedding_nav .inner li:nth-child(1) a {
+    background: #281e19;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.wedding_nav .inner li:nth-child(n+2) a:hover {
+    background: #f1f1f1;
+}
+
+
+
+.wedding_nav .inner.main {
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.wedding_nav .inner.main::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 100%;
+    height: 1px;
+    background: #dcbe96;
+}
+
+.wedding_nav .inner.main::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    width: 10px;
+    height: 10px;
+    background: #dcbe96;
+}
+
+
+.wedding_nav .inner.main h2 {
+    font-family: 'Cormorant Upright', serif;
+
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.wedding_nav .inner.main p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    line-height: 30px;
+}
+
+.wedding_nav .flex_inner .left {
+    background: #f9f9f9;
+}
+
+.wedding_nav .flex_inner .left .left_img {
+    margin: 0 0 30px 0;
+}
+
+.flex_inner .left .left_text h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+
+    margin: 0 0 30px 0;
+}
+
+.flex_inner .left .left_text span {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 20px 20px;
+}
+
+.flex_inner .left .left_text p {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0 0 20px 30px;
+}
+
+.flex_inner .left .left_text .tel_p {
+    margin: 0 0 30px 30px;
+}
+
+.flex_inner .left .left_text .add_p::after,
+.flex_inner .left .left_text .tel_p::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #bbb;
+    margin: 10px 0 0 0;
+}
+
+.flex_inner .left .left_text p::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 10px 5px 0;
+
+}
+
+.wedding_nav .flex_inner .right {
+    flex: 1 0 20%;
+
+}
+
+.flex_inner .right h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+
+    margin: 0 0 10px 0;
+}
+
+.flex_inner .right p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+}
+
+* {
+    outline: 1px solid #21c407;
+}
+
+.flex_inner .right .right_Topbox {
+    background: #fff;
+    padding: 20px;
+}
+
+.flex_inner .right .right_Topbox span {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 20px 0;
+}
+
+.flex_inner .right .right_Topbox input {
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+.flex_inner .right .right_Topbox .box_top {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.right .right_Topbox .box_top span {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.flex_inner .right .right_Topbox .box_mid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.flex_inner .right .right_Topbox .box_mid span {
+    margin: 0 0 10px 0;
+}
+
+.flex_inner .right .right_Topbox .box_mid input {
+    width: 96.5px;
+    margin: 0 10px 0 0;
+}
+
+.flex_inner .right .right_Topbox .box_mid input:last-child {
+    margin: 0 0 0 0;
+}
+
+.flex_inner .right .right_Topbox .box_mid input~input::before {
+    content: "0";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+}
+
+.r_tel {
+    position: relative;
+}
+
+.r_tel .bar01 {
+    position: absolute;
+    top: 80%;
+    left: 99.5px;
+    transform: translate(0, -50%);
+
+    width: 7px;
+    height: 1px;
+    background: #bbb;
+
+}
+
+.r_tel .bar02 {
+    position: absolute;
+    top: 80%;
+    right: 99.5px;
+    transform: translate(0, -50%);
+
+    width: 7px;
+    height: 1px;
+    background: #bbb;
+}
+
+
+
+
+
+.footer {
+    padding: 30px 0;
+    background: #f9f9f9;
+    border-top: 1px solid#ddd;
+}
+
+.footer .flex_inner {
+    padding: 20px 0 0 0;
+}
+
+.footer .flex_inner address {
+    display: flex;
+    gap: 0 30px;
+    flex-wrap: wrap;
+    height: 50px;
+    flex: 1 0 50%;
+
+}
+
+.footer .flex_inner address span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer .flex_inner address span~span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0%, -100%);
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #aaa;
+}
+
+.footer .flex_inner address span:nth-child(4)::before {
+    content: none;
+}
+
+.sns_link {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.sns_link a {
+    display: inline-block;
+}
+
+.sns_link a:first-child img {
+    background: #21c407;
+}
+
+.sns_link img {
+    border-radius: 50%;
+}
+
+.copy {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 0 0 210px;
+
+    font-size: 14px;
+    font-weight: 300;
+}
