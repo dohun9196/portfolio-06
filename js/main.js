@@ -1,6 +1,7 @@
 
 
 $(function () {
+    // { 슬라이드
 
     $('.mainVisual .mainSlide').slick({
         dots: false,
@@ -26,6 +27,30 @@ $(function () {
         arrows: true,
         cssEase: 'linear',
     });
+    $('.lobbyContent .inner .lobby_slide').slick({
+        dots: true,
+        arrows: true,
+        cssEase: 'linear',
+    });
+    $('.vipContent .inner .vip_slide').slick({
+        dots: true,
+        arrows: true,
+        cssEase: 'linear',
+    });
+    $('.courtesyContent .inner .courtesy_slide').slick({
+        dots: true,
+        arrows: true,
+        cssEase: 'linear',
+    });
+    $('.otherContent .inner .other_slide').slick({
+        dots: true,
+        arrows: true,
+        cssEase: 'linear',
+    });
+
+
+    // 슬라이드 }
+
 
     $('.down_con a').click(function () {
         $('html, body').animate({

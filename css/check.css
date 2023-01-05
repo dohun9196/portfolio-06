@@ -154,7 +154,7 @@
     margin: 0 0 10px 0;
 }
 
-.hallVisual .inner p {
+.weddingVisual .inner p {
     font-size: 30px;
     font-weight: 700;
 }
@@ -175,7 +175,7 @@
 
 .wedding_nav .inner a {
     display: block;
-    width: 150px;
+    width: 180px;
 
     padding: 10px 20px;
 
@@ -190,43 +190,42 @@
     text-align: center;
 }
 
-
-
 .wedding_nav .inner li:nth-child(2) a {
     background: #281e19;
     color: #fff;
     transition: 0.5s;
 }
 
-.wedding_nav .inner li:nth-child(n+3) a:hover,
+
 .wedding_nav .inner li:nth-child(1) a:hover {
     background: #f1f1f1;
 }
 
-.wedding_nav .inner li:nth-child(n+3) a {
-    background: #fff;
-}
 
-.wedding_nav .flex_inner {
+
+.wedding_nav .inner.main {
     position: relative;
+    text-align: center;
+    margin: 50px auto;
 }
 
-.wedding_nav .flex_inner::before {
+.wedding_nav .inner.main::before {
     content: "";
     position: absolute;
-    top: 0%;
-    left: 370px;
-    transform: translate(0%, 0);
-    width: 1px;
-    height: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 100%;
+    height: 1px;
     background: #dcbe96;
 }
 
-.wedding_nav .flex_inner::after {
+.wedding_nav .inner.main::after {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 370px;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 
     width: 10px;
@@ -234,206 +233,162 @@
     background: #dcbe96;
 }
 
-.wedding_nav .flex_inner .wedding_left {
-    padding: 0 20px 0 0;
-}
 
-.wedding_nav .flex_inner .wedding_left span {
-    display: block;
-    font-size: 25px;
-    font-weight: 500;
-
-    text-align: right;
-    margin: 0 0 20px 0;
-}
-
-.wedding_nav .flex_inner .wedding_right {
-    flex: 1 0 40%;
-    padding: 0 0 0 20px;
-}
-
-.wedding_nav .flex_inner .wedding_right h3 {
-    font-size: 30px;
-    font-weight: 500;
-    margin: 0 0 20px 0;
-}
-
-.wedding_nav .flex_inner .wedding_right p {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 30px;
-    word-break: keep-all;
-}
-
-.brideContent {}
-
-.brideContent h2 {
-    position: relative;
-
+.wedding_nav .inner.main h2 {
     font-family: 'Cormorant Upright', serif;
-    text-align: center;
+
     font-style: italic;
     font-size: 50px;
     font-weight: 700;
-
     margin: 0 0 30px 0;
 }
 
-
-.brideContent h2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -30%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100%;
-    height: 1px;
-    background: #dcbe96;
-}
-
-.brideContent h2::after {
-    content: "";
-    display: block;
-    position: absolute;
-
-    bottom: -30%;
-    left: 50%;
-    transform: translate(-50%, 50%) rotate(-45deg);
-
-    width: 10px;
-    height: 10px;
-    background: #dcbe96;
-}
-
-.brideContent p {
-    text-align: center;
-
+.wedding_nav .inner.main p {
     font-size: 20px;
-    font-weight: 500;
-    /* line-height: 1.5; */
+    font-weight: 300;
     margin: 0 0 30px 0;
+    line-height: 30px;
 }
 
-.brideContent .inner .bride_slide {
-    position: relative;
+
+
+.wedding_nav .inner.content .flex_inner {
+    justify-content: space-between;
+    margin: 0 auto 20px auto;
+    padding: 15px 0;
+}
+
+
+
+.wedding_nav .inner.content .flex_inner span {
+    display: inline-block;
+    text-align: left;
+
+}
+
+
+.wedding_nav .inner.content .check_main .check_table {
     width: 100%;
-    height: 650px;
+}
+
+.wedding_nav .inner.content .check_main col {
+    width: 100%;
+}
+
+.wedding_nav .inner.content .check_main .col1 {
+    width: 10%;
+}
+
+.wedding_nav .inner.content .check_main .col2 {
+    width: 20%;
+}
+
+.wedding_nav .inner.content .check_main table>tbody {
+    border: 1px solid #ebebeb;
+}
+
+.wedding_nav .inner.content .check_main table>tbody>tr>th {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+    background: #fafafa;
+
+    vertical-align: middle;
+
+    padding: 10px 20px;
+}
+
+
+
+.wedding_nav .inner.content .check_main table>thead>tr>th {
+    text-align: center;
+    font-weight: normal;
+    white-space: nowrap;
+    font-size: 15px;
+
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+    color: #fff;
+    background: rgba(205, 205, 205, 1);
+
+    vertical-align: middle;
+
+    padding: 5px 20px;
+}
+
+
+.check_main table>tbody>tr>td {
+    text-align: center;
+    word-break: break-all;
+    font-size: 15px;
+    line-height: 25px;
+
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+
+    color: #555555;
+    background: #fcfcfc;
+
+    vertical-align: middle;
+
+    padding: 10px 20px;
+}
+
+.check_main table>tbody td hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 10px -20px;
+    border-top: 1px solid #ebebeb;
+}
+
+.check_main .alignL {
+    text-align: left;
+    line-height: 25px;
+}
+
+.check_main .check_event {
+    text-align: center;
+
     margin: 0 0 30px 0;
 }
 
-.brideContent .inner .bride_slide figure {
-    font-size: 0;
-}
-
-
-
-.brideContent .inner .bride_slide .slick-prev {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(0, -50%)rotate(45deg);
-
-    width: 50px;
-    height: 50px;
-
-    font-size: 0;
-
-    border: 2px solid #ddd;
-    border-top: none;
-    border-right: none;
-    background: none;
-
-    z-index: 99;
-}
-
-.brideContent .inner .bride_slide .slick-next {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(0, -50%) rotate(45deg);
-
-    width: 50px;
-    height: 50px;
-
-    font-size: 0;
-
-    border: 2px solid #bbb;
-    border-bottom: none;
-    border-left: none;
-    background: none;
-
-    z-index: 99;
-}
-
-.brideContent .inner .bride_slide .slick-dots {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.brideContent .inner .bride_slide .slick-dots li {
+.check_main .check_event a {
     display: inline-block;
-    margin: 0 10px 0 0;
-    border-radius: 50%;
-    font-size: 0;
-    width: 15px;
-    height: 15px;
-    background: transparent;
-    border: 2px solid #ddd;
-    cursor: pointer;
+    width: 320px;
+    border: none;
+    background: none;
 }
 
-.brideContent .inner .bride_slide .slick-dots li:last-child {
-    margin: 0;
-}
-
-.brideContent .inner .bride_slide .slick-dots li button {
-    display: none;
-}
-
-.brideContent .inner .bride_slide .slick-dots li.slick-active {
-    background: #fff;
-}
-
-.brideContent .inner .bride_slide figure {
-    height: 650px;
-}
-
-.brideContent .inner .bride_slide .slide01 {
-    background: url(../img/wedding/bride_slide01.jpg) no-repeat center bottom/cover;
-
-}
-
-.brideContent .inner .bride_slide .slide02 {
-    background: url(../img/wedding/bride_slide02.jpg) no-repeat center bottom/cover;
-}
-
-.brideContent .inner .bride_slide .slide03 {
-    background: url(../img/wedding/bride_slide03.jpg) no-repeat center center/cover;
-}
-
-.brideContent .inner .bride_slide .slide04 {
-    background: url(../img/wedding/bride_slide04.jpg) no-repeat center center/cover;
-}
-
-
-.brideContent .inner .Wedding_Reservation {
-    text-align: center;
-}
-
-.brideContent .inner .Wedding_Reservation a {
+.check_main .check_event span {
     display: inline-block;
-    padding: 20px 60px;
-
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    background: #281e19;
-
+    padding: 10px 30px;
     border-radius: 10px;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid#aaa;
+    transition: 0.3s;
 }
+
+.check_main .check_event i {
+    margin: 0 0 0 15px;
+}
+
+.check_main .check_event span:hover {
+    background: #281e19;
+    color: #fff;
+}
+
+
+
+
 
 .footer {
     padding: 30px 0;
