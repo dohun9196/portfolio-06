@@ -5,7 +5,7 @@ $(function () {
 
     $('.mainVisual .mainSlide').slick({
         dots: false,
-        autoplay: false,
+        autoplay: true,
         arrows: true,
 
         prevArrow: $('#prev'),
