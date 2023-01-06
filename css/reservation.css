@@ -212,7 +212,7 @@
 .wedding_nav .inner.main::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -224,7 +224,7 @@
 .wedding_nav .inner.main::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 
@@ -255,7 +255,7 @@
 }
 
 .wedding_nav .flex_inner .left .left_img {
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
 }
 
 .flex_inner .left .left_text h3 {
@@ -277,6 +277,7 @@
     font-size: 15px;
     font-weight: 100;
     margin: 0 0 20px 30px;
+    line-height: 20px;
 }
 
 .flex_inner .left .left_text .tel_p {
@@ -325,16 +326,13 @@
     letter-spacing: 2px;
 }
 
-* {
-    outline: 1px solid #21c407;
-}
 
 .flex_inner .right .right_Topbox {
     background: #fff;
     padding: 20px;
 }
 
-.flex_inner .right .right_Topbox span {
+.flex_inner .right .right_Topbox>span {
     display: block;
     font-size: 20px;
     line-height: 30px;
@@ -342,9 +340,18 @@
     margin: 0 0 20px 0;
 }
 
+.flex_inner .right .right_Topbox span {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+
+    margin: 20px 0 20px 0;
+}
+
 .flex_inner .right .right_Topbox input {
     font-size: 12px;
     border: 1px solid #ccc;
+    padding: 8px 10px;
 }
 
 .flex_inner .right .right_Topbox .box_top {
@@ -374,6 +381,7 @@
 .flex_inner .right .right_Topbox .box_mid input {
     width: 96.5px;
     margin: 0 10px 0 0;
+
 }
 
 .flex_inner .right .right_Topbox .box_mid input:last-child {
@@ -393,7 +401,7 @@
 
 .r_tel .bar01 {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 99.5px;
     transform: translate(0, -50%);
 
@@ -405,7 +413,7 @@
 
 .r_tel .bar02 {
     position: absolute;
-    top: 80%;
+    top: 75%;
     right: 99.5px;
     transform: translate(0, -50%);
 
@@ -414,9 +422,98 @@
     background: #bbb;
 }
 
+.right .right_Topbox .r_other .top {
+    display: block;
+    text-align: center;
+}
+
+.right .right_Topbox .r_other .other_flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.right .right_Topbox .r_other .other_flex span {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 0 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0;
+}
+
+.right .right_Topbox .r_other .other_flex span.on {
+    background: #6a5043;
+    color: #fff;
+}
+
+.right .right_Botbox {
+    background: #fff;
+    padding: 20px;
+}
 
 
+.right .right_Botbox span {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 20px 0;
+}
 
+.right .right_Botbox input {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    width: 100%;
+    height: 190px;
+}
+
+.right .apply {
+    padding: 32px 0 0 0;
+    text-align: center;
+}
+
+.right .apply span {
+    display: block;
+    border: 1px solid #ddd;
+    background: #554035;
+    color: #fff;
+    padding: 10px 70px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.right .apply span:hover {
+
+    background: #6a5043;
+    color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.right_Botbox textarea {
+    width: 100%;
+    padding: 10px;
+
+    font-size: 15px;
+    font-weight: 300;
+    border: 1px solid #bbb;
+
+    resize: vertical
+}
+
+.right_Botbox textarea:focus {
+    outline: none;
+}
 
 .footer {
     padding: 30px 0;

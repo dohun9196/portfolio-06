@@ -255,7 +255,7 @@
 .wedding_nav .inner.content .flex_inner {
     justify-content: space-between;
     margin: 0 auto 20px auto;
-    padding: 15px 0;
+
 }
 
 
@@ -263,6 +263,7 @@
 .wedding_nav .inner.content .flex_inner span {
     display: inline-block;
     text-align: left;
+    font-size: 20px;
 
 }
 

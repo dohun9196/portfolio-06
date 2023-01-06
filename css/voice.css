@@ -175,7 +175,7 @@
 
 .wedding_nav .inner a {
     display: block;
-    width: 180px;
+    width: 200px;
 
     padding: 10px 20px;
 
@@ -190,17 +190,16 @@
     text-align: center;
 }
 
-.wedding_nav .inner li:nth-child(1) a {
+.wedding_nav .inner li:nth-child(3) a {
     background: #281e19;
     color: #fff;
     transition: 0.5s;
 }
 
 
-.wedding_nav .inner li:nth-child(2) a:hover {
+.wedding_nav .inner li:nth-child(-n+2) a:hover {
     background: #f1f1f1;
 }
-
 
 
 .wedding_nav .inner.main {
@@ -212,7 +211,7 @@
 .wedding_nav .inner.main::before {
     content: "";
     position: absolute;
-    top: 60%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -224,7 +223,7 @@
 .wedding_nav .inner.main::after {
     content: "";
     position: absolute;
-    top: 60%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 
@@ -250,145 +249,274 @@
     line-height: 30px;
 }
 
-
-
-.wedding_nav .inner.content .flex_inner {
-    justify-content: space-between;
-    margin: 0 auto 20px auto;
+.wedding_nav .flex_inner .left {
+    background: #f9f9f9;
 }
 
-
-
-.wedding_nav .inner.content .flex_inner span {
-    display: inline-block;
-    text-align: left;
-    font-size: 20px;
+.wedding_nav .flex_inner .left .left_img {
+    margin: 0 0 50px 0;
 }
 
-
-
-.wedding_nav .inner.content .program_main .program_table {
-    width: 100%;
-}
-
-.wedding_nav .inner.content .program_main col {
-    width: 100%;
-}
-
-.wedding_nav .inner.content .program_main .col0 {
-    width: 10%;
-}
-
-.wedding_nav .inner.content .program_main .col1 {
-    width: 20%;
-}
-
-.wedding_nav .inner.content .program_main table>tbody {
-    border: 1px solid #ebebeb;
-}
-
-.wedding_nav .inner.content .program_main table>tbody>tr>th {
+.flex_inner .left .left_text h3 {
     text-align: center;
-    font-weight: normal;
-    font-size: 15px;
-
-    border-bottom: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-
-    background: #fafafa;
-
-    vertical-align: middle;
-
-    padding: 10px 20px;
-}
-
-
-
-.wedding_nav .inner.content .program_main table>thead>tr>th {
-    text-align: center;
-    font-weight: normal;
-    white-space: nowrap;
-    font-size: 15px;
-
-    border-bottom: 1px solid #ebebeb;
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-
-    color: #fff;
-    background: rgba(205, 205, 205, 1);
-
-    vertical-align: middle;
-
-    padding: 5px 20px;
-}
-
-
-.program_main table>tbody>tr>td {
-    text-align: center;
-    word-break: break-all;
-    font-size: 15px;
-    line-height: 25px;
-
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
-
-    color: #555555;
-    background: #fcfcfc;
-
-    vertical-align: middle;
-
-    padding: 10px 20px;
-}
-
-.program_main table>tbody td hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    margin: 10px -20px;
-    border-top: 1px solid #ebebeb;
-}
-
-.program_main .alignL {
-    text-align: left;
-    line-height: 25px;
-}
-
-.program_main .program_event {
-    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
 
     margin: 0 0 30px 0;
 }
 
-.program_main .program_event a {
-    display: inline-block;
-    width: 300px;
-    border: none;
-    background: none;
+.flex_inner .left .left_text span {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 20px 20px;
 }
 
-.program_main .program_event span {
+.flex_inner .left .left_text p {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0 0 20px 30px;
+    line-height: 20px;
+}
+
+.flex_inner .left .left_text .tel_p {
+    margin: 0 0 30px 30px;
+}
+
+.flex_inner .left .left_text .add_p::after,
+.flex_inner .left .left_text .tel_p::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #bbb;
+    margin: 10px 0 0 0;
+}
+
+.flex_inner .left .left_text p::before {
+    content: "";
     display: inline-block;
-    padding: 10px 30px;
-    border-radius: 10px;
-    font-size: 18px;
+    width: 5px;
+    height: 5px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 10px 5px 0;
+
+}
+
+.wedding_nav .flex_inner .right {
+    flex: 1 0 20%;
+
+}
+
+.flex_inner .right h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+
+    margin: 0 0 10px 0;
+}
+
+.flex_inner .right p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+}
+
+
+.flex_inner .right .right_Topbox {
     background: #fff;
-    border: 1px solid#aaa;
+    padding: 20px;
+}
+
+.flex_inner .right .right_Topbox>span {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 20px 0;
+}
+
+.flex_inner .right .right_Topbox span {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+
+    margin: 20px 0 20px 0;
+}
+
+.flex_inner .right .right_Topbox input {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+}
+
+.flex_inner .right .right_Topbox .box_top {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.right .right_Topbox .box_top input {
+    width: 316.5px;
+}
+
+.right .right_Topbox .box_top span {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.flex_inner .right .right_Topbox .box_mid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.flex_inner .right .right_Topbox .box_mid span {
+    margin: 0 0 10px 0;
+}
+
+.flex_inner .right .right_Topbox .box_mid input {
+    width: 96.5px;
+    margin: 0 10px 0 0;
+
+}
+
+.flex_inner .right .right_Topbox .box_mid input:last-child {
+    margin: 0 0 0 0;
+}
+
+.flex_inner .right .right_Topbox .box_mid input~input::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+}
+
+.r_tel {
+    position: relative;
+}
+
+.r_tel .bar01 {
+    position: absolute;
+    top: 75%;
+    left: 99.5px;
+    transform: translate(0, -50%);
+
+    width: 7px;
+    height: 1px;
+    background: #bbb;
+
+}
+
+.r_tel .bar02 {
+    position: absolute;
+    top: 75%;
+    right: 99.5px;
+    transform: translate(0, -50%);
+
+    width: 7px;
+    height: 1px;
+    background: #bbb;
+}
+
+.right .right_Topbox .r_other .top {
+    display: block;
+    text-align: center;
+}
+
+.right .right_Topbox .r_other .other_flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.right .right_Topbox .r_other .other_flex span {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 0 30px;
     transition: 0.3s;
+    cursor: pointer;
+    margin: 0;
 }
 
-.program_main .program_event i {
-    margin: 0 0 0 15px;
-}
-
-.program_main .program_event span:hover {
-    background: #281e19;
+.right .right_Topbox .r_other .other_flex span.on {
+    background: #6a5043;
     color: #fff;
 }
 
+.right .right_Botbox {
+    background: #fff;
+    padding: 20px 20px 40px 20px;
+}
 
 
+.right .right_Botbox span {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 20px 0;
+}
 
+.right .right_Botbox input {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    width: 100%;
+    height: 190px;
+}
+
+.right .apply {
+    padding: 32px 0 0 0;
+    text-align: center;
+}
+
+.right .apply span {
+    display: block;
+    border: 1px solid #ddd;
+    background: #554035;
+    color: #fff;
+    padding: 10px 70px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.right .apply span:hover {
+
+    background: #6a5043;
+    color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.right_Botbox textarea {
+    width: 100%;
+    padding: 10px;
+
+    font-size: 15px;
+    font-weight: 300;
+    border: 1px solid #bbb;
+
+    resize: vertical
+}
+
+.right_Botbox textarea:focus {
+    outline: none;
+}
 
 .footer {
     padding: 30px 0;
