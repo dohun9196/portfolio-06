@@ -6,24 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aT포레웨딩홀</title>
-    <link rel="stylesheet" href="./css/reset.css">
+
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/basic.css">
-    <link rel="stylesheet" href="./css/main.css?ver=230102">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/main.js?ver=230102"></script>
+
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
     <div class="Wrap">
+
+        <!-- popup -->
+        <div class="popup">
+            <div class="pop_right">
+                <figure>
+                    <img src="./img/popup_right.png" alt="">
+                </figure>
+                <div class="pop_text">
+                    <strong>2023년 상반기 잔여타임 안내</strong>
+                    <span class="ma20">3/19(일) 14시</span>
+
+                    <span>4/23(일) 14시</span>
+                    <span class="ma20">4/30(일) 14시</span>
+
+                    <span>5/14(일) 14시</span>
+                    <span class="ma20">5/21(일) 14시</span>
+
+                    <span>6/04(일) 12시30분</span>
+                    <span>6/11(일) 12시30분/14시</span>
+                    <span>6/18(일) 14시</span>
+                    <span class="ma20">6/24(토)15시30분</span>
+
+                    <p> * 수시로 마감될수 있으니 예약실로 문의바랍니다.<br />
+                        예약문의 02-6300-2300</p>
+                </div>
+                <div class="pop_btn">
+                    <div class="click">
+                        <a href="./doc/Reservation.html">예약상담 클릭</a>
+                    </div>
+                </div>
+                <div class="pop_arrow">
+                    <i class="bi bi-arrow-up-short"></i>
+                </div>
+            </div>
+        </div>
+
+
         <header id="header" class="header">
             <div class="h_bg">
                 header background
             </div>
+
             <div class="flex_inner">
                 <h1 class="header_logo">
-                    <a href="./index.html">
+                    <a href="/">
                         <img src="./img/logoMain.png" alt="" srcset="">
                     </a>
                 </h1>
@@ -77,16 +120,15 @@
         </header>
 
         <main>
+            <!-- mainVisual -->
             <section class="mainVisual">
                 <div class="mainSlide_bg">
 
                 </div>
-                <div class="visualText_box">
-                    <div class="visual_top box">
-                        Special Wedding Venue
-                    </div>
-                    <div class="visual_bottom box">
+                <div class="inner">
+                    <div class="m_slide_tit">
                         <h2>aT foret</h2>
+                        <strong>Special Wedding Venue</strong>
                     </div>
                 </div>
                 <div class="mainSlide">
@@ -109,25 +151,26 @@
 
             </section>
 
+
+            <!-- brandStory -->
             <section class="brandStory sec">
                 <div class="flex_inner">
                     <div class="brandText_box">
                         <div class="txtbox_top box">
-                            A Special venue for you
-                            aT foret wedding party
+                            <span>Special venue for you aT foret wedding party</span>
                         </div>
                         <div class="txtbox_middle box">
-                            모두를 만족시키는 최고의 선택
-
-                            aT포레 웨딩 &amp; 파티
+                            <h2>최고의 선택 <em class="fon_cormot">aT</em>포레 웨딩 &amp; 파티</h2>
                         </div>
                         <div class="txtbox_bottom box">
-                            눈부심과 설레임으로 다가오는 특별한 날, 두 사람의 영원한 사랑을 약속하는 아름다운 순간을 aT포레웨딩홀에서 선사해드립니다. 오로지 신랑·신부님 만을 위한 세심한
-                            배려와 서비스로 평생의 소중한 기억으로 남길 수 있는 최고의 웨딩을 약속드립니다.
+                            <p>
+                                눈부심과 설레임으로 다가오는 특별한 날, 두 사람의 영원한 사랑을 약속하는 아름다운 순간을 aT포레 웨딩홀에서 선사해드립니다. 오로지 신랑·신부님 만을 위한
+                                세심한
+                                배려와 서비스로 평생의 소중한 기억으로 남길 수 있는 최고의 웨딩을 약속드립니다.
+                            </p>
                         </div>
                         <div class="more">
-                            <a href="./doc/story.html">more brand story</a>
-                            <!-- <i class="xi-arrow-right"></i> -->
+                            <a href="../doc/story.html">brand story</a>
                         </div>
                     </div>
 
@@ -137,15 +180,18 @@
                 </div>
             </section>
 
+
+            <!-- subVisual -->
             <section class="subVisual">
                 <div class="subvisual_bg">
                     <div class="inner">
-                        <span>2023</span> </br>
-                        <h2> All New Banquet</h2>
-                        <p>연회장 리모델링 &amp; 메뉴 리뉴얼<br>
-                            지금 바로 만나보세요!</p>
+                        <div class="m_cont_tit">
+                            <strong>2023</strong>
+                            <h2> All New Banquet</h2>
+                            <p>연회장 리모델링 &amp; 메뉴 리뉴얼 지금 바로 만나보세요!</p>
+                        </div>
                         <div class="more">
-                            <a href="">Remodeling</a>
+                            <a href="javascript:void(0)">Remodeling</a>
                         </div>
                     </div>
                     <div class="sbg_cover">
@@ -154,14 +200,18 @@
                 </div>
             </section>
 
+
+            <!-- mainContetn -->
             <section class="mainContetn sec">
                 <div class="inner">
-                    <h2>Wedding Guide</h2>
-                    <p>7m층고에 30m의 버진로드, 여유있고 프라이빗한 단독홀</p>
+                    <div class="m_cont_tit">
+                        <h2>Wedding Guide</h2>
+                        <p>7m층고에 30m의 버진로드, 여유있고 프라이빗한 단독홀</p>
+                    </div>
                 </div>
                 <div class="flex_inner">
-                    <a href="./doc/hall.html">
-                        <figure class="conImg_box">
+                    <a href="./doc/hall.html" class="wd10">
+                        <div class="conImg_box">
 
                             <div class="conText_box">
                                 <h3>그랜드홀</h3>
@@ -172,11 +222,11 @@
                             <div class="conImg_cover">
                                 background cover
                             </div>
-                        </figure>
+                        </div>
                     </a>
 
                     <a href="./doc/bride.html">
-                        <figure class="conImg_box">
+                        <div class="conImg_box">
 
                             <div class="conText_box">
                                 <h3>신부대기실</h3>
@@ -187,11 +237,11 @@
                             <div class="conImg_cover">
                                 background cover
                             </div>
-                        </figure>
+                        </div>
                     </a>
 
                     <a href="./doc/lobby.html">
-                        <figure class="conImg_box">
+                        <div class="conImg_box">
 
                             <div class="conText_box">
                                 <h3>로비 라운지</h3>
@@ -202,11 +252,11 @@
                             <div class="conImg_cover">
                                 background cover
                             </div>
-                        </figure>
+                        </div>
                     </a>
 
                     <a href="./doc/vip.html">
-                        <figure class="conImg_box">
+                        <div class="conImg_box">
 
                             <div class="conText_box">
                                 <h3>VIP룸</h3>
@@ -217,127 +267,177 @@
                             <div class="conImg_cover">
                                 background cover
                             </div>
-                        </figure>
+                        </div>
                     </a>
                 </div>
             </section>
 
+
+            <!-- mainEvent -->
             <section class="mainEvent sec">
                 <div class="inner">
-                    <h2>Special Offers</h2>
-                    <p>aT포레웨딩홀의 다양한 이벤트와 혜택을 만나보세요.</p>
+                    <div class="m_cont_tit">
+                        <h2>Special Offers</h2>
+                        <p><em class="fon_cormot">aT</em>포레웨딩홀의 다양한 이벤트와 혜택을 만나보세요.</p>
+                    </div>
                 </div>
+
                 <div class="flex_inner">
-                    <figure class="event_box">
+                    <div class="event_box">
                         <a href="./doc/event.html">
                             <img src="./img/mainEvent01.jpg" alt="">
                             <div class="eveText_box">
-                                <h3>좋은 예감! 2023 상반기 예식 잔여타임 예약</h3>
-                                <p>미리 준비하는 2023년 상반기 웨딩!<br>
-                                    aT포레에서 특별한 혜택을 드립니다.</p>
+                                <h3>2023 상반기 예식 잔여타임 예약</h3>
+                                <p>미리 준비하는 2023년 상반기 웨딩! <em class="fon_cormot">aT</em>포레에서 특별한 혜택을 드립니다.</p>
                                 <div class="event_date">
                                     <strong>이벤트 기간</strong>
                                     <span>2022/05/01 ~ 계속</span>
                                 </div>
                             </div>
                         </a>
-                    </figure>
-
-
-                    <figure class="event_box">
+                    </div>
+                    <div class="event_box">
                         <a href="./doc/event.html">
                             <img src="./img/mainEvent02.jpg" alt="">
                             <div class="eveText_box">
                                 <h3>2022년 하반기 예식 잔여타임 이벤트</h3>
-                                <p>2022년 하반기 웨딩 잔여타임 계약 고객님께<br>
-                                    aT포레에서 특별한 혜택을 드립니다.</p>
+                                <p>2022년 하반기 웨딩 잔여타임 계약 고객님께 <em class="fon_cormot">aT</em>포레에서 특별한 혜택을 드립니다.</p>
                                 <div class="event_date">
                                     <strong>이벤트 기간</strong>
                                     <span>2022/05/01 ~ 계속</span>
                                 </div>
                             </div>
                         </a>
-                    </figure>
-
-                    <figure class="event_box">
+                    </div>
+                    <div class="event_box">
                         <a href="./doc/event.html">
                             <img src="./img/mainEvent03.jpg" alt="">
                             <div class="eveText_box">
                                 <h3>기업행사, 각종 모임 예약접수</h3>
-                                <p>소중한 사람들과의 특별한 만남<br>
-                                    더욱 뜻깊은 자리로 만들어 드리겠습니다.</p>
+                                <p>소중한 사람들과의 특별한 만남 더욱 뜻깊은 자리로 만들어 드리겠습니다.
                                 <div class="event_date">
                                     <strong>이벤트 기간</strong>
                                     <span>2022/05/01 ~ 계속</span>
                                 </div>
                             </div>
                         </a>
-                    </figure>
+                    </div>
                 </div>
             </section>
 
+
+            <!-- weddingArea -->
             <section class="weddingArea">
                 <div class="flex_inner">
-                    <div class="news">
-                        <a href="./doc/news.html">
-                            <h2>News &amp; Notice</h2>
-                            <p>등록된 뉴스 &amp; 공지사항이 없습니다.</p>
-                            <div class="more">hidden</div>
-                        </a>
+                    <div class="notice_box area_box">
+                        <div class="noti_tit area_tit">
+                            <a href="./doc/news.html">
+                                <span>Notice</span>
+                                <i class="bi bi-plus"></i>
+                            </a>
+                        </div>
+                        <div class="notice_cont">
+                            <a href="">
+                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                    accusantium.</strong>
+                                <em class="news_sp">[2023.01.01]</em>
+                            </a>
+                            <a href="">
+                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                    accusantium.</strong>
+                                <em class="news_sp">[2023.01.01]</em>
+                            </a>
+                            <a href="">
+                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                    accusantium.</strong>
+                                <em class="news_sp">[2023.01.01]</em>
+                            </a>
+                            <a href="">
+                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                    accusantium.</strong>
+                                <em class="news_sp">[2023.01.01]</em>
+                            </a>
+                            <a href="">
+                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                    accusantium.</strong>
+                                <em class="news_sp">[2023.01.01]</em>
+                            </a>
+                            <a href="">
+                                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                    accusantium.</strong>
+                                <em class="news_sp">[2023.01.01]</em>
+                            </a>
+                        </div>
                     </div>
-                    <div class="reservation">
-                        <a href="./doc/Reservation.html">
-                            <h2>Reservation</h2>
-                            <p>상담 및 방문예약</p>
-                            <img src="./img/wedding01.jpg" alt="">
-                            <div class="more">hidden</div>
-                        </a>
-                    </div>
-                    <div class="location">
-                        <a href="./doc/location.html">
-                            <h2>Location</h2>
-                            <p>찾아오시는 길</p>
-                            <img src="./img/wedding02.jpg" alt="">
-                            <div class="more">hidden</div>
-                        </a>
-                    </div>
-                    <div class="gallery">
-                        <a href="./doc/gallery.html">
-                            <h2>Gallery</h2>
-                            <p>aT포레웨딩홀 갤러리</p>
-                            <img src="./img/wedding03.jpg" alt="">
-                            <div class="more">hidden</div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
+                    <div class="loaction area_box">
+                        <div class="area_tit">
+                            <a href="./doc/location.html">
+                                <span>Loaction</span>
+                                <i class="bi bi-plus"></i>
+                            </a>
+                        </div>
+                        <div class="roadImg">
+                            <!-- * 카카오맵 - 지도퍼가기 -->
+                            <!-- 1. 지도 노드 -->
+                            <div id="daumRoughmapContainer1679030561342"
+                                class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                            <!--
+                                2. 설치 스크립트
+                                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                            -->
+                            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-        <footer class="footer">
-            <div class="flex_inner">
-                <div class="footerLogo">
-                    <img src="./img/logoFooter.png" alt="">
+                            <!-- 3. 실행 스크립트 -->
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp": "1679030561342",
+                                    "key": "2e4k2",
+                                    "mapWidth": "520",
+                                    "mapHeight": "173"
+                                }).render();
+                            </script>
+                        </div>
+                    </div>
                 </div>
-                <address>
-                    <span>서울특별시 서초구 강남대로 27 (양재동 232번지) aT포레웨딩홀</span>
-                    <span>TEL 02) 6300-2300~2</span>
-                    <span>FAX 02-6300-2303</span>
-                    <span>상호 : (주)아텍스컨벤션</span>
-                    <span>사업자번호 : 214-87-49942</span>
-                </address>
-                <div class="sns_link">
-                    <a href="">
+
+    </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="flex_inner">
+            <div class="footerLogo">
+                <img src="./img/logoMain.png" alt="">
+            </div>
+            <address>
+                <span>서울특별시 서초구 강남대로 27 (양재동 232번지) aT포레웨딩홀</span>
+                <span>TEL 02 6300-2300~2</span>
+                <span>FAX 02-6300-2303</span>
+                <span>상호 : (주)아텍스컨벤션</span>
+                <span>사업자번호 : 214-87-49942</span>
+                <div class="copy">
+                    &copy; AT FORET, ALL RIGHTS RESERVED.
+                </div>
+            </address>
+            <div class="sns_link">
+                <div class="flex_link">
+                    <a href="javascript:void(0)" class="bg_cor">
                         <img src="./img/sns_naverBlog.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="javascript:void(0)">
                         <img src="./img/sns_instagram3.png" alt="">
                     </a>
                 </div>
+                <div class="tel">
+                    <a href="tel:02-6300-2300">
+                        <img src="./img/sns_tel.png" alt="">
+                        <span>02-6300-2300~2</span>
+                    </a>
+                </div>
             </div>
-            <div class="copy">
-                &copy;AT FORET, ALL RIGHTS RESERVED.
-            </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
 
