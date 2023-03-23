@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lobby</title>
-    <link rel="stylesheet" href="../css/reset.css">
+    <title>at foret-lobby</title>
     <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/basic.css">
-    <link rel="stylesheet" href="../css/lobby.css">
+    <link rel="stylesheet" href="../css/subpage.css">
+
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/main.js"></script>
@@ -21,9 +22,10 @@
             <div class="h_bg">
                 header background
             </div>
+
             <div class="flex_inner">
                 <h1 class="header_logo">
-                    <a href="../index.html">
+                    <a href="/">
                         <img src="../img/logoMain.png" alt="" srcset="">
                     </a>
                 </h1>
@@ -77,82 +79,105 @@
         </header>
 
         <main>
+            <!-- weddingVisual -->
             <section class="weddingVisual">
                 <div class="weddingVisual_bg"></div>
                 <div class="inner">
-                    <h2>Wedding Guide</h2>
-                    <p>프라이빗한 단독홀</p>
+                    <div class="m_slide_tit">
+                        <h2>Wedding Guide</h2>
+                        <p>프라이빗한 단독홀</p>
+                    </div>
                 </div>
             </section>
 
-            <section class="wedding_nav sec">
-                <div class="inner">
-                    <ul>
-                        <li><a href="./hall.html">그랜드홀</a></li>
-                        <li><a href="./bride.html">신부대기실</a></li>
-                        <li><a href="./lobby.html">로비라운지</a></li>
-                        <li><a href="./vip.html">VIP룸</a></li>
-                        <li><a href="./courtesy.html">폐백실</a></li>
-                        <li><a href="./other.html">편의시설</a></li>
-                    </ul>
-                </div>
+            <!-- Subpage_nav -->
+            <article class="Subpage_nav pa50 lobby_nav">
+                <ul>
+                    <li><a href="./hall.html">그랜드홀</a></li>
+                    <li><a href="./bride.html">신부대기실</a></li>
+                    <li><a href="./lobby.html">로비라운지</a></li>
+                    <li><a href="./vip.html">VIP룸</a></li>
+                    <li><a href="./courtesy.html">폐백실</a></li>
+                    <li><a href="./other.html">편의시설</a></li>
+                </ul>
+            </article>
 
+            <!-- title_area -->
+            <article class="title_area">
                 <div class="flex_inner">
                     <div class="wedding_left">
-                        <span>Lobby Lounge</span>
-                        <span>로비 라운지</span>
+                        <div class="area_tit">
+                            <strong>Lobby Lounge</strong>
+                        </div>
                     </div>
                     <div class="wedding_right">
-                        <h3>고객님의 품격을 높여 드리는 고품격 로비라운지</h3>
-                        <p>들어오는 순간부터 여유로움과 차분함을 주어 고객님의 품격을 높여 드리는 고품격의 로비라운지에서 하객을 맞이 할 수 있도록 꾸몄습니다. 축하객들을 위해 준비된 넓고
-                            탁트인 로비와 접수대는 감각적인 인테리어와 수려한 조명, 깔끔한 디자인으로 품격있는 공간을 제공합니다. 또한 신랑신부, 하객의 동선을 고려하여 모든 시설물에 이동이
-                            편리합니다.</p>
+                        <div class="area_desc">
+                            <strong>고객님의 품격을 높여 드리는 고품격 로비라운지</strong>
+                            <p>들어오는 순간부터 여유로움과 차분함을 주어 고객님의 품격을 높여 드리는 고품격의 로비라운지에서 하객을 맞이 할 수 있도록 꾸몄습니다. 축하객들을 위해 준비된
+                                넓고
+                                탁트인 로비와 접수대는 감각적인 인테리어와 수려한 조명, 깔끔한 디자인으로 품격있는 공간을 제공합니다. 또한 신랑신부, 하객의 동선을 고려하여 모든 시설물에
+                                이동이
+                                편리합니다.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="lobbyContent sec">
-
+            <!-- lobbyContent -->
+            <section class="lobbyContent weddingContent sec">
                 <div class="inner">
-                    <h2>Lobby Lounge</h2>
-                    <p>들어오는 순간부터 여유로움과
-                        차분함을 주는 넓고 탁트인 로비 라운지</p>
-                    <div class="lobby_slide">
-                        <figure class="slide01">01</figure>
-                        <figure class="slide02">02</figure>
-                        <figure class="slide03">03</figure>
-                        <figure class="slide04">04</figure>
-                        <figure class="slide05">05</figure>
+                    <div class="m_cont_tit">
+                        <h2>Lobby Lounge</h2>
+                        <p>들어오는 순간부터 여유로움과
+                            차분함을 주는 넓고 탁트인 로비 라운지</p>
                     </div>
-                    <div class="Wedding_Reservation">
-                        <a href="./Reservation.html">예약문의</a>
-                    </div>
+                </div>
+
+                <div class="wedding_slide lobby_slide">
+                    <figure class="slide01">01</figure>
+                    <figure class="slide02">02</figure>
+                    <figure class="slide03">03</figure>
+                    <figure class="slide04">04</figure>
+                    <figure class="slide05">05</figure>
+                </div>
+
+                <div class="Wedding_Reservation">
+                    <a href="./Reservation.html">예약문의</a>
+                </div>
             </section>
         </main>
 
         <footer class="footer">
             <div class="flex_inner">
                 <div class="footerLogo">
-                    <img src="../img/logoFooter.png" alt="">
+                    <img src="../img/logoMain.png" alt="">
                 </div>
                 <address>
                     <span>서울특별시 서초구 강남대로 27 (양재동 232번지) aT포레웨딩홀</span>
-                    <span>TEL 02) 6300-2300~2</span>
+                    <span>TEL 02 6300-2300~2</span>
                     <span>FAX 02-6300-2303</span>
                     <span>상호 : (주)아텍스컨벤션</span>
                     <span>사업자번호 : 214-87-49942</span>
+                    <div class="copy">
+                        &copy; AT FORET, ALL RIGHTS RESERVED.
+                    </div>
                 </address>
                 <div class="sns_link">
-                    <a href="">
-                        <img src="../img/sns_naverBlog.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../img/sns_instagram3.png" alt="">
-                    </a>
+                    <div class="flex_link">
+                        <a href="" class="bg_cor">
+                            <img src="../img/sns_naverBlog.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="../img/sns_instagram3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="tel">
+                        <a href="tel:02-6300-2300">
+                            <img src="../img/sns_tel.png" alt="">
+                            <span>02-6300-2300~2</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="copy">
-                &copy;AT FORET, ALL RIGHTS RESERVED.
             </div>
         </footer>
     </div>

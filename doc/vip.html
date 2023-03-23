@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vip</title>
-    <link rel="stylesheet" href="../css/reset.css">
+    <title>at foret-vip</title>
     <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/basic.css">
-    <link rel="stylesheet" href="../css/vip.css">
+    <link rel="stylesheet" href="../css/subpage.css">
+
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/main.js"></script>
@@ -21,9 +22,10 @@
             <div class="h_bg">
                 header background
             </div>
+
             <div class="flex_inner">
                 <h1 class="header_logo">
-                    <a href="../index.html">
+                    <a href="/">
                         <img src="../img/logoMain.png" alt="" srcset="">
                     </a>
                 </h1>
@@ -77,78 +79,98 @@
         </header>
 
         <main>
+            <!-- weddingVisual -->
             <section class="weddingVisual">
                 <div class="weddingVisual_bg"></div>
                 <div class="inner">
-                    <h2>Wedding Guide</h2>
-                    <p>프라이빗한 단독홀</p>
+                    <div class="m_slide_tit">
+                        <h2>Wedding Guide</h2>
+                        <p>프라이빗한 단독홀</p>
+                    </div>
                 </div>
             </section>
 
-            <section class="wedding_nav sec">
-                <div class="inner">
-                    <ul>
-                        <li><a href="./hall.html">그랜드홀</a></li>
-                        <li><a href="./bride.html">신부대기실</a></li>
-                        <li><a href="./lobby.html">로비라운지</a></li>
-                        <li><a href="./vip.html">VIP룸</a></li>
-                        <li><a href="./courtesy.html">폐백실</a></li>
-                        <li><a href="./other.html">편의시설</a></li>
-                    </ul>
-                </div>
+            <!-- Subpage_nav -->
+            <article class="Subpage_nav pa50 vip_nav">
+                <ul>
+                    <li><a href="./hall.html">그랜드홀</a></li>
+                    <li><a href="./bride.html">신부대기실</a></li>
+                    <li><a href="./lobby.html">로비라운지</a></li>
+                    <li><a href="./vip.html">VIP룸</a></li>
+                    <li><a href="./courtesy.html">폐백실</a></li>
+                    <li><a href="./other.html">편의시설</a></li>
+                </ul>
+            </article>
 
+            <!-- title_area -->
+            <article class="title_area">
                 <div class="flex_inner">
                     <div class="wedding_left">
-                        <span>VIP Room</span>
-                        <span>혼주대기실</span>
+                        <div class="area_tit">
+                            <strong>VIP Room</strong>
+                        </div>
                     </div>
                     <div class="wedding_right">
-                        <h3>편안하게 기다리실 수 있는 혼주대기실</h3>
-                        <p>먼저 오신 혼주님들이 편안하게 대기하실 수 있는 쇼파와 테이블이 있어 식장에 올라가기 전에 설레는 마음을 차분히 가라앉히고 준비하실 수 있도록 별도의 혼주대기실이
-                            마련되어 있습니다.</p>
+                        <div class="area_desc">
+                            <strong>편안하게 기다리실 수 있는 혼주대기실</strong>
+                            <p>먼저 오신 혼주님들이 편안하게 대기하실 수 있는 쇼파와 테이블이 있어 식장에 올라가기 전에 설레는 마음을 차분히 가라앉히고 준비하실 수 있도록 별도의
+                                혼주대기실이
+                                마련되어 있습니다.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="vipContent sec">
-
+            <!-- vipContent -->
+            <section class="vipContent weddingContent sec">
                 <div class="inner">
-                    <h2>VIP Room</h2>
-                    <p>혼주분들이 편안하게 기다리실 수 있는
-                        혼주대기실이 준비되어 있습니다.</p>
-                    <div class="vip_slide">
-                        <figure class="slide01">01</figure>
-                        <figure class="slide02">02</figure>
+                    <div class="m_cont_tit">
+                        <h2>VIP Room</h2>
+                        <p>혼주분들이 편안하게 기다리실 수 있는
+                            혼주대기실이 준비되어 있습니다.</p>
                     </div>
-                    <div class="Wedding_Reservation">
-                        <a href="./Reservation.html">예약문의</a>
-                    </div>
+                </div>
+
+                <div class="wedding_slide vip_slide">
+                    <figure class="slide01">01</figure>
+                    <figure class="slide02">02</figure>
+                </div>
+                <div class="Wedding_Reservation">
+                    <a href="./Reservation.html">예약문의</a>
+                </div>
             </section>
         </main>
-
         <footer class="footer">
             <div class="flex_inner">
                 <div class="footerLogo">
-                    <img src="../img/logoFooter.png" alt="">
+                    <img src="../img/logoMain.png" alt="">
                 </div>
                 <address>
                     <span>서울특별시 서초구 강남대로 27 (양재동 232번지) aT포레웨딩홀</span>
-                    <span>TEL 02) 6300-2300~2</span>
+                    <span>TEL 02 6300-2300~2</span>
                     <span>FAX 02-6300-2303</span>
                     <span>상호 : (주)아텍스컨벤션</span>
                     <span>사업자번호 : 214-87-49942</span>
+                    <div class="copy">
+                        &copy; AT FORET, ALL RIGHTS RESERVED.
+                    </div>
                 </address>
                 <div class="sns_link">
-                    <a href="">
-                        <img src="../img/sns_naverBlog.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../img/sns_instagram3.png" alt="">
-                    </a>
+                    <div class="flex_link">
+                        <a href="" class="bg_cor">
+                            <img src="../img/sns_naverBlog.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="../img/sns_instagram3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="tel">
+                        <a href="tel:02-6300-2300">
+                            <img src="../img/sns_tel.png" alt="">
+                            <span>02-6300-2300~2</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="copy">
-                &copy;AT FORET, ALL RIGHTS RESERVED.
             </div>
         </footer>
     </div>

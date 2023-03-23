@@ -1,0 +1,908 @@
+/* header, footer */
+@import url(./header.css);
+@import url(./footer.css);
+
+
+
+/* { 브랜드 스토리 페이지 */
+/* brandVisual section */
+.brandVisual {
+    position: relative;
+    background: url(../img/brand/brand_visual01.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+
+.brandVisual .brandVisual_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.brandVisual .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brandVisual .inner .m_slide_tit {
+    text-align: center;
+    text-shadow: 1px 1px 3px #333;
+    color: #fff;
+}
+
+.brandVisual .inner .m_slide_tit h2 {
+    font-family: 'Cormorant Upright', serif;
+}
+
+/* Subpage_nav article */
+.brand_nav>ul>li:first-child a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* brandcontent01 section */
+.brandcontent01 {
+    padding-bottom: 100px;
+}
+
+.brandcontent01 .inner {
+    position: relative;
+}
+
+.brandcontent01 .inner::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    height: 1px;
+    background: #dcbe96;
+}
+
+.brandcontent01 .inner::after {
+    content: "";
+    position: absolute;
+    bottom: -64.5px;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: #dcbe96;
+}
+
+.brandcontent01 .inner .m_cont_tit h2 {
+    font-family: 'Cormorant Upright', serif;
+}
+
+.brandcontent01 .flex_inner>* {
+    flex: 1;
+}
+
+.brandcontent01 .flex_inner .left {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+.brandcontent01 .flex_inner .left img {
+    width: 100%;
+    height: 100%;
+}
+
+.brandcontent01 .flex_inner .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* brandStory section */
+.brandStory {
+    background: #fdfdfd;
+}
+
+.brandStory .flex_inner {
+    position: relative;
+}
+
+.brandStory .flex_inner::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 1px;
+    height: 100%;
+    background: #dcbe96;
+}
+
+.brandStory .flex_inner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    width: 10px;
+    height: 10px;
+    background: #dcbe96;
+}
+
+.brandStory .brandText_box {
+    flex: 1;
+    word-break: keep-all;
+    padding: 40px 10px 40px 0;
+}
+
+.brandStory .brandText_box .txtbox_top span {
+    display: block;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+    color: #555;
+}
+
+.brandStory .brandText_box .txtbox_middle h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0 0 15px 0;
+}
+
+.brandStory .brandText_box .txtbox_bottom p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin: 0 0 30px 0;
+    color: #777;
+}
+
+.brandStory .brandImg {
+    flex: 1;
+}
+
+.brandStory .brandImg img {
+    height: 100%;
+}
+
+/* brandcontent02 section*/
+.brandcontent02 .inner {
+    position: relative;
+}
+
+.brandcontent02 .inner .m_cont_tit h2 {
+    font-family: 'Cormorant Upright', serif;
+}
+
+.brandcontent02 .inner::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    height: 1px;
+    background: #dcbe96;
+}
+
+.brandcontent02 .inner::after {
+    content: "";
+    position: absolute;
+    bottom: -64.5px;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: #dcbe96;
+}
+
+.brandcontent02 .flex_inner {
+    flex-direction: column;
+    word-break: keep-all;
+    gap: 0px;
+}
+
+.brandcontent02 .brand02_flex {
+    display: flex;
+    gap: 00px;
+    justify-content: space-between;
+
+}
+
+.brandcontent02 .flex_inner .brand02_flex>* {
+    flex: 1;
+}
+
+.brandcontent02 .flex_inner .brand02_flex .br_text_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandcontent02 .flex_inner .brand02_flex .br_text_wrap .br_desc {
+    padding: 0 30px;
+}
+
+.brandcontent02 .flex_inner .brand02_flex .br_img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.brandcontent02 .flex_inner .bottom_wrap {
+    text-align: right;
+}
+
+/* 브랜드 스토리 페이지 } */
+
+
+
+/* { 찾아오시는 길 페이지 */
+/* locationVisual section */
+.locationVisual {
+    position: relative;
+    background: url(../img/wedding/weddingvisual01.jpg) no-repeat center center/cover;
+    height: 50vh;
+}
+
+.locationVisual .locationVisual_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+.locationVisual .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.locationVisual .inner .m_slide_tit {
+    text-align: center;
+    text-shadow: 1px 1px 3px #333;
+    color: #fff;
+}
+
+/* brand_nav article */
+.loaction_nav>ul>li:last-child a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* locationContent section */
+.locationContent .inner {
+    position: relative;
+}
+
+.locationContent .inner::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    height: 1px;
+    background: #dcbe96;
+}
+
+.locationContent .inner::after {
+    content: "";
+    position: absolute;
+    bottom: -64.5px;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: #dcbe96;
+}
+
+.locationContent .inner .m_cont_tit h2 {
+    font-family: 'Cormorant Upright', serif;
+}
+
+.locationContent .road_map_wrap {
+    padding: 0 0 50px 0;
+}
+
+.locationContent .road_map_wrap .loc_road,
+.locationContent .road_map_wrap .loc_map {
+    flex: 1;
+    border: 1px solid #f1f1f1;
+    padding: 30px 20px 30px 40px;
+}
+
+
+.locationContent .road_map_wrap .con_box {
+    display: inline-flex;
+    gap: 20px;
+    padding: 20px 30px;
+
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
+.locationContent .road_map_wrap .con_box img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.locationContent .road_map_wrap .con_box span {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.locationContent .road_map_wrap .loc_list .list>ul {
+    margin: 0 0 30px 0;
+}
+
+.locationContent .road_map_wrap .loc_list .list>ul>li span {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 10px 40px;
+}
+
+.locationContent .road_map_wrap .loc_list .list .sub_list {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    margin: 0 0 20px 60px;
+}
+
+.locationContent .road_map_wrap .loc_list .list .sub_list li {
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.locationContent .road_map_wrap .loc_list .list .sub_list li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translate(0, -50%);
+
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border: 1px solid #777;
+    border-radius: 50%;
+}
+
+.locationContent .road_map_wrap .loc_map {
+    padding-right: 40px;
+}
+
+.locationContent .road_map_wrap .loc_map .roadImg {
+    margin: 0 0 30px 0;
+}
+
+.root_daum_roughmap .wrap_controllers {
+    display: none;
+}
+
+.locationContent .road_map_wrap .loc_map .map_event {
+    text-align: center;
+
+    margin: 0 0 30px 0;
+}
+
+.locationContent .road_map_wrap .loc_map .map_event a {
+    display: inline-block;
+}
+
+.locationContent .road_map_wrap .loc_map .map_event span {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid#aaa;
+    transition: 0.3s;
+}
+
+.locationContent .road_map_wrap .loc_map .map_event i {
+    margin: 0 0 0 15px;
+}
+
+.locationContent .road_map_wrap .loc_map .map_event span:hover {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+.locationContent .road_map_wrap .loc_map .map_list .map_list_tit {
+    font-size: 25px;
+}
+
+.locationContent .road_map_wrap .loc_map .map_list .number {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+/* 찾아오시는 길 페이지 } */
+
+
+
+
+
+/* { 그랜드 홀 페이지 */
+/* Subpage_nav article */
+.hall_nav ul>li:first-child a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* hallContent section */
+.hallContent .wedding_slide .slide01 {
+    background: url(../img/wedding/hall_slide01.jpg) no-repeat center bottom/cover;
+
+}
+
+.hallContent .wedding_slide .slide02 {
+    background: url(../img/wedding/hall_slide02.jpg) no-repeat center bottom/cover;
+}
+
+.hallContent .wedding_slide .slide03 {
+    background: url(../img/wedding/hall_slide03.jpg) no-repeat center center/cover;
+}
+
+.hallContent .wedding_slide .slide04 {
+    background: url(../img/wedding/hall_slide04.jpg) no-repeat center center/cover;
+}
+
+.hallContent .wedding_slide .slide05 {
+    background: url(../img/wedding/hall_slide05.jpg) no-repeat center center/cover;
+}
+
+/* 그랜드 홀 페이지 } */
+
+
+
+
+
+/* { 신부대기실 페이지 */
+/* .Subpage_nav */
+.birde_nav ul>li:nth-child(2) a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* brideContent */
+.brideContent .bride_slide .slide01 {
+    background: url(../img/wedding/bride_slide01.jpg) no-repeat center bottom/cover;
+
+}
+
+.brideContent .bride_slide .slide02 {
+    background: url(../img/wedding/bride_slide02.jpg) no-repeat center bottom/cover;
+}
+
+.brideContent .bride_slide .slide03 {
+    background: url(../img/wedding/bride_slide03.jpg) no-repeat center center/cover;
+}
+
+.brideContent .bride_slide .slide04 {
+    background: url(../img/wedding/bride_slide04.jpg) no-repeat center center/cover;
+}
+
+/* 신부대기실 페이지 } */
+
+
+
+
+/* { 로비 페이지 */
+/* .Subpage_nav */
+.lobby_nav ul>li:nth-child(3) a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+.lobby_nav ul>li:nth-child(n+4) a:hover,
+.lobby_nav ul>li:nth-child(-n+2) a:hover {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* brideContent */
+.lobbyContent .lobby_slide .slide01 {
+    background: url(../img/wedding/lobby_slide01.jpg) no-repeat center bottom/cover;
+}
+
+.lobbyContent .lobby_slide .slide02 {
+    background: url(../img/wedding/lobby_slide02.jpg) no-repeat center bottom/cover;
+}
+
+.lobbyContent .lobby_slide .slide03 {
+    background: url(../img/wedding/lobby_slide03.jpg) no-repeat center center/cover;
+}
+
+.lobbyContent .lobby_slide .slide04 {
+    background: url(../img/wedding/lobby_slide04.jpg) no-repeat center center/cover;
+}
+
+.lobbyContent .lobby_slide .slide05 {
+    background: url(../img/wedding/lobby_slide05.jpg) no-repeat center center/cover;
+}
+
+/* 로비 페이지 } */
+
+
+
+
+
+/* { vip 페이지 */
+/* .Subpage_nav */
+.vip_nav ul>li:nth-child(4) a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+.vip_nav ul>li:nth-child(n+5) a:hover,
+.vip_nav ul>li:nth-child(-n+3) a:hover {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* vipContent */
+.vipContent .vip_slide .slide01 {
+    background: url(../img/wedding/vip_slide01.jpg) no-repeat center bottom/cover;
+
+}
+
+.vipContent .vip_slide .slide02 {
+    background: url(../img/wedding/vip_slide02.jpg) no-repeat center bottom/cover;
+}
+
+/* vip 페이지 } */
+
+
+
+
+/* { 폐백실 페이지 */
+/* Subpage_nav */
+.courtesy_nav ul>li:nth-child(5) a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+.courtesy_nav ul>li:nth-child(n+6) a:hover,
+.courtesy_nav ul>li:nth-child(-n+4) a:hover {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* courtesyContent */
+.courtesyContent .courtesy_slide .slide01 {
+    background: url(../img/wedding/courtesy_slide01.jpg) no-repeat center bottom/cover;
+}
+
+.courtesyContent .courtesy_slide .slide02 {
+    background: url(../img/wedding/courtesy_slide02.jpg) no-repeat center bottom/cover;
+}
+
+.courtesyContent .courtesy_slide .slide03 {
+    background: url(../img/wedding/courtesy_slide03.jpg) no-repeat center center/cover;
+}
+
+.courtesyContent .courtesy_slide .slide04 {
+    background: url(../img/wedding/courtesy_slide04.jpg) no-repeat center center/cover;
+}
+
+/* 폐백실 페이지 } */
+
+
+
+
+/* { 편의시설 페이지 */
+/* Subpage_nav */
+.other_nav ul>li:nth-child(6) a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* otherContent */
+.otherContent .other_slide .slide01 {
+    background: url(../img/wedding/other_slide01.jpg) no-repeat center bottom/cover;
+}
+
+.otherContent .other_slide .slide02 {
+    background: url(../img/wedding/other_slide02.jpg) no-repeat center bottom/cover;
+}
+
+.otherContent .other_slide .slide03 {
+    background: url(../img/wedding/other_slide03.jpg) no-repeat center center/cover;
+}
+
+.otherContent .other_slide .slide04 {
+    background: url(../img/wedding/other_slide04.jpg) no-repeat center center/cover;
+}
+
+.otherContent .other_slide .slide05 {
+    background: url(../img/wedding/other_slide05.jpg) no-repeat center center/cover;
+}
+
+/* 편의시설 페이지 } */
+
+
+
+
+
+/* { 결혼식 순서 페이지  */
+/* Subpage_nav */
+.program_nav ul>li:first-child a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* programContent */
+.programContent .program_reading {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.programContent .program_reading .top span {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+}
+
+.programContent .program_reading .program_main .program_table {
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.programContent .program_reading .program_main col {
+    width: 100%;
+}
+
+.programContent .program_reading .program_main .col0 {
+    width: 10%;
+}
+
+.programContent .program_reading .program_main .col1 {
+    width: 20%;
+}
+
+.programContent .program_reading .program_main table>tbody {
+    border: 1px solid #ebebeb;
+}
+
+.programContent .program_reading .program_main table>tbody>tr>th {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+    color: #555;
+    background: #fafafa;
+
+    padding: 10px 20px;
+}
+
+.programContent .program_reading .program_main table>thead>tr>th {
+    text-align: center;
+    font-weight: normal;
+    white-space: nowrap;
+    font-size: 15px;
+
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+    color: #fff;
+    background: rgba(205, 205, 205, 1);
+
+
+    padding: 5px 20px;
+}
+
+.programContent .program_reading .program_main table>tbody>tr>td {
+    text-align: center;
+    word-break: break-all;
+    font-size: 15px;
+    line-height: 25px;
+
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+
+    color: #777;
+    background: #fcfcfc;
+
+    padding: 10px 20px;
+}
+
+.programContent .program_reading .program_main table>tbody td hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 10px -20px;
+    border-top: 1px solid #ebebeb;
+}
+
+.programContent .program_reading .program_main .alignL {
+    text-align: left;
+    line-height: 25px;
+}
+
+.programContent .program_reading .program_main .program_event {
+    text-align: center;
+
+    margin: 0 0 30px 0;
+}
+
+.programContent .program_reading .program_main .program_event a {
+    display: inline-block;
+}
+
+.programContent .program_reading .program_main .program_event span {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid#aaa;
+    transition: 0.3s;
+}
+
+.programContent .program_reading .program_main .program_event i {
+    margin: 0 0 0 15px;
+}
+
+.programContent .program_reading .program_main .program_event span:hover {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* 결혼식 순서 페이지 }  */
+
+
+
+
+
+/* { 웨딩 체크리스트 페이지 */
+/* Subpage_nav */
+.check_nav ul>li:last-child a {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* checkContent */
+.checkContent .check_list {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.checkContent .check_list .top span {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+}
+
+.checkContent .check_list .check_main .check_table {
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.checkContent .check_list .check_main col {
+    width: 100%;
+}
+
+.checkContent .check_list .check_main .col1 {
+    width: 10%;
+}
+
+.checkContent .check_list .check_main .col2 {
+    width: 20%;
+}
+
+.checkContent .check_list .check_main table>tbody {
+    border: 1px solid #ebebeb;
+}
+
+.checkContent .check_list .check_main table>tbody>tr>th {
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+    color: #555;
+    background: #fafafa;
+
+    padding: 10px 20px;
+}
+
+
+
+.checkContent .check_list .check_main table>thead>tr>th {
+    text-align: center;
+    font-weight: normal;
+    white-space: nowrap;
+    font-size: 15px;
+
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+    color: #fff;
+    background: rgba(205, 205, 205, 1);
+
+    padding: 5px 20px;
+}
+
+
+.checkContent .check_list .check_main table>tbody>tr>td {
+    text-align: center;
+    word-break: break-all;
+    font-size: 15px;
+    line-height: 25px;
+
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+
+    color: #777;
+    background: #fcfcfc;
+
+    padding: 10px 20px;
+}
+
+.checkContent .check_list .check_main table>tbody td hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 10px -20px;
+    border-top: 1px solid #ebebeb;
+}
+
+.checkContent .check_list .check_main .alignL {
+    text-align: left;
+    line-height: 25px;
+}
+
+.checkContent .check_list .check_main .check_event {
+    text-align: center;
+
+    margin: 0 0 30px 0;
+}
+
+.checkContent .check_list .check_main .check_event a {
+    display: inline-block;
+    width: 320px;
+    border: none;
+    background: none;
+}
+
+.checkContent .check_list .check_main .check_event span {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid#aaa;
+    transition: 0.3s;
+}
+
+.checkContent .check_list .check_main .check_event i {
+    margin: 0 0 0 15px;
+}
+
+.checkContent .check_list .check_main .check_event span:hover {
+    background: #281e19;
+    color: #dcbe96;
+}
+
+/* 웨딩 체크리스트 페이지 } */

@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>check</title>
-    <link rel="stylesheet" href="../css/reset.css">
+    <title>at foret-check</title>
     <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/basic.css">
-    <link rel="stylesheet" href="../css/check.css">
+    <link rel="stylesheet" href="../css/subpage.css">
+
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/main.js"></script>
@@ -21,9 +22,10 @@
             <div class="h_bg">
                 header background
             </div>
+
             <div class="flex_inner">
                 <h1 class="header_logo">
-                    <a href="../index.html">
+                    <a href="/">
                         <img src="../img/logoMain.png" alt="" srcset="">
                     </a>
                 </h1>
@@ -77,32 +79,37 @@
         </header>
 
         <main>
+            <!-- weddingVisual -->
             <section class="weddingVisual">
                 <div class="weddingVisual_bg"></div>
                 <div class="inner">
-                    <h2>User Guide</h2>
-                    <p>aT포레 이용안내</p>
+                    <div class="m_slide_tit">
+                        <h2>User Guide</h2>
+                        <p>aT포레 이용안내</p>
+                    </div>
                 </div>
             </section>
+            <!-- Subpage_nav -->
+            <article class="Subpage_nav pa50 check_nav">
+                <ul>
+                    <li><a href="./program.html">결혼식 순서</a></li>
+                    <li><a href="./check.html">웨딩 체크리스트</a></li>
+                </ul>
+            </article>
 
-            <section class="wedding_nav sec">
+            <section class="checkContent weddingContent pa50">
                 <div class="inner">
-                    <ul>
-                        <li><a href="./program.html">결혼식 순서</a></li>
-                        <li><a href="./check.html">웨딩 체크리스트</a></li>
-                    </ul>
-                </div>
-
-                <div class="inner main">
-                    <h2>Wedding Check List</h2>
-                    <p>결혼식을 준비하기 위해 필요한 사항을 정리했습니다.</p>
-                </div>
-
-                <div class="inner content">
-                    <div class="flex_inner">
-                        <span>D-Day 체크리스트</span>
-
+                    <div class="m_cont_tit">
+                        <h2>Wedding Check List</h2>
+                        <p>결혼식을 준비하기 위해 필요한 사항을 정리했습니다.</p>
                     </div>
+                </div>
+
+                <div class="check_list">
+                    <div class="top">
+                        <span>D-Day 체크리스트</span>
+                    </div>
+
                     <div class="check_main">
                         <table class="check_table">
                             <colgroup>
@@ -291,26 +298,34 @@
         <footer class="footer">
             <div class="flex_inner">
                 <div class="footerLogo">
-                    <img src="../img/logoFooter.png" alt="">
+                    <img src="../img/logoMain.png" alt="">
                 </div>
                 <address>
                     <span>서울특별시 서초구 강남대로 27 (양재동 232번지) aT포레웨딩홀</span>
-                    <span>TEL 02) 6300-2300~2</span>
+                    <span>TEL 02 6300-2300~2</span>
                     <span>FAX 02-6300-2303</span>
                     <span>상호 : (주)아텍스컨벤션</span>
                     <span>사업자번호 : 214-87-49942</span>
+                    <div class="copy">
+                        &copy; AT FORET, ALL RIGHTS RESERVED.
+                    </div>
                 </address>
                 <div class="sns_link">
-                    <a href="">
-                        <img src="../img/sns_naverBlog.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../img/sns_instagram3.png" alt="">
-                    </a>
+                    <div class="flex_link">
+                        <a href="" class="bg_cor">
+                            <img src="../img/sns_naverBlog.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="../img/sns_instagram3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="tel">
+                        <a href="tel:02-6300-2300">
+                            <img src="../img/sns_tel.png" alt="">
+                            <span>02-6300-2300~2</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="copy">
-                &copy;AT FORET, ALL RIGHTS RESERVED.
             </div>
         </footer>
     </div>
